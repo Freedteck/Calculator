@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,26 +13,53 @@ body {
 .calc-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 5px solid black;
     overflow: hidden;
+    width: 320px;
+    background-color: black;
 }
 
-.calc-btn {
+.calc-btn, .display {
     display: flex;
     justify-content: center;
 }
 
 input {
+    height: 70px;
     width: 100%;
-    height: 60px;
+    border-radius: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 3px solid black;
+    padding-left: 5px;
+    background-color: burlywood;
 }
 .btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 0;
+    width: 80px;
+    height: 70px;
+    border: 1.5px solid black;
+    border-radius: 3px;
     font-weight: 700;
     font-size: 1.2rem;
+    background-color: darkcyan;
 }
 .btn.zero {
-    width: 120px;
+    width: 160px;
+}
+.btn.top {
+    background-color: blueviolet;
+}
+.btn.last {
+    background-color: brown;
+}
+
+.btn:active {
+    background-color: rgb(58, 245, 245);
+}
+.btn.top:active {
+    background-color: rgb(167, 82, 246);
+}
+
+.btn.last:active {
+    background-color: rgb(246, 79, 79);
 }
